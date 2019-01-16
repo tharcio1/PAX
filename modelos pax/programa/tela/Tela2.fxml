@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1378.0" prefWidth="1081.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.Controlador">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1377.0" prefWidth="905.0">
+         <children>
+            <AnchorPane fx:id="anchor2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1378.0" prefWidth="1081.0" style="-fx-background-color: white;">
+               <children>
+                  <TextArea editable="false" layoutX="190.0" layoutY="155.0" prefHeight="502.0" prefWidth="627.0" style="-fx-background-color: white;" text="Nome: &#10;&#10;Endereço:&#10;&#10;Fone:&#10;&#10;Vendedor:&#10;&#10;valor(entrada): &#10;&#10;valor(parcelas):&#10;&#10;Data:         Dia              Mes           Ano">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextArea>
+                  <TextField fx:id="InsNome" layoutX="349.0" layoutY="166.0" prefHeight="0.0" prefWidth="196.0" />
+                  <TextField fx:id="InsEndereco" layoutX="349.0" layoutY="222.0" prefHeight="0.0" prefWidth="196.0" />
+                  <TextField fx:id="InsFone" layoutX="349.0" layoutY="283.0" prefHeight="0.0" prefWidth="196.0" />
+                  <TextField fx:id="InsDia" layoutX="338.0" layoutY="513.0" prefHeight="28.0" prefWidth="40.0" />
+                  <ImageView fitHeight="457.0" fitWidth="457.0" layoutX="174.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/simboloPax.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="InsMes" layoutX="447.0" layoutY="513.0" prefHeight="28.0" prefWidth="40.0" />
+                  <TextField fx:id="InsAno" layoutX="541.0" layoutY="513.0" prefHeight="28.0" prefWidth="64.0" />
+                  <TextField fx:id="InsVendedor" layoutX="349.0" layoutY="336.0" prefHeight="0.0" prefWidth="196.0" />
+                  <TextField fx:id="InsValor" layoutX="349.0" layoutY="393.0" prefHeight="0.0" prefWidth="196.0" />
+                  <TextField fx:id="InsValorParc" layoutX="349.0" layoutY="453.0" prefHeight="0.0" prefWidth="196.0" />
+                  <Button layoutX="319.0" layoutY="598.0" mnemonicParsing="false" onAction="#enviar" text="Eunapolis" />
+                  <Button layoutX="447.0" layoutY="598.0" mnemonicParsing="false" onAction="#enviar2" text="Porto Seguro" />
+                  <ImageView fitHeight="58.0" fitWidth="58.0" layoutX="195.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/novaLogo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1378.0" prefWidth="1077.0" visible="false">
+               <children>
+                  <TextArea editable="false" layoutX="15.0" layoutY="101.0" prefHeight="174.0" prefWidth="697.0" text="Nome:                                                                                                                                                 &#10;Endereço:                                                                                                                                               &#10;Fone:                            Valor R$:                      &#10;Vendedor:                                  ,                         &#10;Assinatura: _________________________________________________________ &#10;                                                          &#10;                                                             ( Entrada )       ">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextArea>
+                  <TextArea editable="false" layoutX="15.0" layoutY="372.0" prefHeight="174.0" prefWidth="697.0" text="Nome:                                                                                                                                                 &#10;Endereço:                                                                                                                                               &#10;Fone:                            Valor R$:                      &#10;Vendedor:                                   ,                         &#10;Assinatura: _________________________________________________________ &#10;                                                          &#10;                                                             ( 1ª Parcela )       ">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextArea>
+                  <ImageView fitHeight="87.0" fitWidth="560.0" layoutX="115.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/simboloPax.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="96.0" fitWidth="519.0" layoutX="112.0" layoutY="276.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/simboloPax.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="nome" layoutX="82.0" layoutY="108.0" prefHeight="18.0" prefWidth="627.0" text="Label" />
+                  <Label fx:id="endereco" layoutX="105.0" layoutY="130.0" prefHeight="18.0" prefWidth="627.0" text="Label" />
+                  <Label fx:id="fone" layoutX="69.0" layoutY="152.0" prefHeight="18.0" prefWidth="111.0" text="Label" />
+                  <Label fx:id="nome2" layoutX="82.0" layoutY="381.0" prefHeight="18.0" prefWidth="627.0" text="Label" />
+                  <Label fx:id="endereco2" layoutX="105.0" layoutY="403.0" prefHeight="18.0" prefWidth="627.0" text="Label" />
+                  <Label fx:id="fone2" layoutX="69.0" layoutY="425.0" prefHeight="18.0" prefWidth="111.0" text="Label" />
+                  <Label fx:id="dia" layoutX="264.0" layoutY="179.0" text="Label" />
+                  <Label fx:id="mes" layoutX="304.0" layoutY="179.0" text="Label" />
+                  <Label fx:id="ano" layoutX="347.0" layoutY="179.0" text="Label" />
+                  <Label fx:id="dia2" layoutX="270.0" layoutY="450.0" text="Label" />
+                  <Label fx:id="mes2" layoutX="310.0" layoutY="450.0" text="Label" />
+                  <Label fx:id="ano2" layoutX="353.0" layoutY="450.0" text="Label" />
+                  <Line endX="-89.0" endY="-20.000015258789062" layoutX="393.0" layoutY="199.0" startX="-95.0" startY="-5.0" />
+                  <Line endX="-89.0" endY="-20.000015258789062" layoutX="435.0" layoutY="199.0" startX="-95.0" startY="-5.0" />
+                  <Line endX="-89.0" endY="-20.000015258789062" layoutX="397.0" layoutY="471.0" startX="-95.0" startY="-5.0" />
+                  <Line endX="-89.0" endY="-20.000015258789062" layoutX="439.0" layoutY="471.0" startX="-95.0" startY="-5.0" />
+                  <Label fx:id="valor" layoutX="254.0" layoutY="152.0" prefHeight="18.0" prefWidth="23.0" text="Label" />
+                  <Label fx:id="valor2" layoutX="254.0" layoutY="425.0" prefHeight="18.0" prefWidth="22.0" text="Label" />
+                  <Label fx:id="vendedor" layoutX="108.0" layoutY="174.0" text="Label" />
+                  <Label fx:id="vendedor2" layoutX="108.0" layoutY="447.0" text="Label" />
+                  <TextArea editable="false" layoutX="7.0" layoutY="904.0" prefHeight="174.0" prefWidth="697.0" text="Nome:                                                                                                                                                 &#10;Endereço:                                                                                                                                               &#10;Fone:                            Valor R$:                    &#10;Vendedor:                                   ,                         &#10;Assinatura: _________________________________________________________ &#10;                                                          &#10;                                                             ( 3ª Parcela )       ">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextArea>
+                  <ImageView fitHeight="96.0" fitWidth="519.0" layoutX="88.0" layoutY="814.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/simboloPax.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="nome4" layoutX="70.0" layoutY="912.0" prefHeight="18.0" prefWidth="627.0" text="Label" />
+                  <Label fx:id="endereco4" layoutX="93.0" layoutY="934.0" prefHeight="18.0" prefWidth="627.0" text="Label" />
+                  <Label fx:id="fone4" layoutX="62.0" layoutY="956.0" prefHeight="18.0" prefWidth="111.0" text="Label" />
+                  <Label fx:id="dia4" layoutX="251.0" layoutY="982.0" text="Label" />
+                  <Label fx:id="mes4" layoutX="291.0" layoutY="982.0" text="Label" />
+                  <Label fx:id="ano4" layoutX="334.0" layoutY="982.0" text="Label" />
+                  <Line endX="-89.0" endY="-20.000015258789062" layoutX="378.0" layoutY="1003.0" startX="-95.0" startY="-5.0" />
+                  <Line endX="-89.0" endY="-20.000015258789062" layoutX="420.0" layoutY="1003.0" startX="-95.0" startY="-5.0" />
+                  <Label fx:id="valor4" layoutX="243.0" layoutY="956.0" prefHeight="18.0" prefWidth="22.0" text="Label" />
+                  <Label fx:id="vendedor4" layoutX="96.0" layoutY="977.0" text="Label" />
+                  <TextArea editable="false" layoutX="5.0" layoutY="633.0" prefHeight="174.0" prefWidth="697.0" text="Nome:                                                                                                                                                 &#10;Endereço:                                                                                                                                               &#10;Fone:                            Valor R$:                     &#10;Vendedor:                                  ,                         &#10;Assinatura: _________________________________________________________ &#10;                                                          &#10;                                                             ( 2ª Parcela )       ">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextArea>
+                  <Label fx:id="nome3" layoutX="72.0" layoutY="641.0" prefHeight="18.0" prefWidth="627.0" text="Label" />
+                  <Label fx:id="endereco3" layoutX="95.0" layoutY="663.0" prefHeight="18.0" prefWidth="627.0" text="Label" />
+                  <Label fx:id="fone3" layoutX="59.0" layoutY="685.0" prefHeight="18.0" prefWidth="111.0" text="Label" />
+                  <Label fx:id="dia3" layoutX="253.0" layoutY="711.0" text="Label" />
+                  <Label fx:id="mes3" layoutX="293.0" layoutY="711.0" text="Label" />
+                  <Label fx:id="ano3" layoutX="336.0" layoutY="711.0" text="Label" />
+                  <Line endX="-89.0" endY="-20.000015258789062" layoutX="380.0" layoutY="732.0" startX="-95.0" startY="-5.0" />
+                  <Line endX="-89.0" endY="-20.000015258789062" layoutX="422.0" layoutY="732.0" startX="-95.0" startY="-5.0" />
+                  <Label fx:id="valor3" layoutX="245.0" layoutY="685.0" prefHeight="18.0" prefWidth="23.0" text="Label" />
+                  <Label fx:id="vendedor3" layoutX="98.0" layoutY="706.0" text="Label" />
+                  <ImageView fitHeight="87.0" fitWidth="560.0" layoutX="102.0" layoutY="546.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/simboloPax.png" />
+                     </image>
+                  </ImageView>
+                  <TextArea editable="false" layoutX="2.0" layoutY="1192.0" prefHeight="174.0" prefWidth="697.0" text="Nome:                                                                                                                                                 &#10;Endereço:                                                                                                                                               &#10;Fone:                            Valor R$:                      (       )&#10;Vendedor:                                   ,                         &#10;Assinatura: _________________________________________________________ &#10;                                                          &#10;                                                             ( 4ª Parcela )       ">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextArea>
+                  <ImageView fitHeight="96.0" fitWidth="519.0" layoutX="80.0" layoutY="1104.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/simboloPax.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="endereco5" layoutX="93.0" layoutY="1222.0" prefHeight="18.0" prefWidth="627.0" text="Label" />
+                  <Label fx:id="fone5" layoutX="62.0" layoutY="1244.0" prefHeight="18.0" prefWidth="111.0" text="Label" />
+                  <Label fx:id="dia5" layoutX="248.0" layoutY="1270.0" text="Label" />
+                  <Label fx:id="mes5" layoutX="289.0" layoutY="1270.0" text="Label" />
+                  <Label fx:id="ano5" layoutX="331.0" layoutY="1270.0" text="Label" />
+                  <Label fx:id="valor5" layoutX="243.0" layoutY="1244.0" prefHeight="18.0" prefWidth="21.0" text="Label" />
+                  <Label fx:id="vendedor5" layoutX="95.0" layoutY="1267.0" text="Label" />
+                  <Label fx:id="nome5" layoutX="67.0" layoutY="1202.0" prefHeight="18.0" prefWidth="627.0" text="Label" />
+                  <Line endX="-89.0" endY="-20.000015258789062" layoutX="378.0" layoutY="1291.0" startX="-95.0" startY="-5.0" />
+                  <Line endX="-89.0" endY="-20.000015258789062" layoutX="420.0" layoutY="1291.0" startX="-95.0" startY="-5.0" />
+                  <Label layoutX="271.0" layoutY="152.0" text=",00" />
+                  <Label layoutX="272.0" layoutY="425.0" text=",00" />
+                  <Label layoutX="262.0" layoutY="685.0" text=",00" />
+                  <Label layoutX="261.0" layoutY="956.0" text=",00" />
+                  <Label layoutX="261.0" layoutY="1244.0" text=",00" />
+                  <Button layoutX="827.0" layoutY="29.0" mnemonicParsing="false" onAction="#voltar" text="Voltar" />
+                  <ImageView fitHeight="16.0" fitWidth="704.0" layoutX="189.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/branco.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="16.0" fitWidth="704.0" layoutX="225.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/branco.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="51.0" fitWidth="58.0" layoutX="142.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/novaLogo.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="51.0" fitWidth="58.0" layoutX="142.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/novaLogo.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="51.0" fitWidth="58.0" layoutX="142.0" layoutY="551.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/novaLogo.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="51.0" fitWidth="58.0" layoutX="129.0" layoutY="820.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/novaLogo.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="51.0" fitWidth="58.0" layoutX="122.0" layoutY="1104.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/novaLogo.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="branco" fitHeight="314.0" fitWidth="709.0" layoutX="3.0" layoutY="1078.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/branco.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>
